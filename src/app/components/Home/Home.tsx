@@ -4,9 +4,9 @@ import { useEffect, useState, useCallback } from 'react';
 
 import Controls from '../Controls/Controls';
 import CatImage from '../CatImage/CatImage';
+import CatButton from '../CatButton.tsx/CatButton';
 
 import '../Home/Home.scss';
-import CatButton from '../CatButton.tsx/CatButton';
 
 export default function Home() {
   const [enabled, setEnabled] = useState(true);
