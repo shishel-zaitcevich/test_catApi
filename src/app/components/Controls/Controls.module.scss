@@ -1,0 +1,42 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-left: 5px;
+
+  label {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    input[type='checkbox'] {
+      appearance: none;
+      width: 10px;
+      height: 10px;
+      border: 1px solid #666;
+      border-radius: 2px;
+      background: linear-gradient(to bottom, #ffffff, #e0e0e0);
+      position: relative;
+      cursor: pointer;
+
+      &:checked::after {
+        content: '';
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: 6px;
+        height: 6px;
+        background-image: url('/checkbox.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      &:disabled {
+        background-color: #eee;
+        border-color: #aaa;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

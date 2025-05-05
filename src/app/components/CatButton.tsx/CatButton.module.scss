@@ -1,0 +1,20 @@
+.catButton {
+  padding: 9px 0;
+  border: none;
+  background: linear-gradient(to bottom, #ffffff, #e0e0e0);
+  border: 1px solid grey;
+  width: 87%;
+  border-radius: 3px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-top: 15px;
+
+  &:hover {
+    background: linear-gradient(to bottom, #f9f9f9, #d0d0d0);
+  }
+
+  &:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+}
